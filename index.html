@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Turkish History</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #1a0f00;
+    background-image: url('ata.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff7e6;
+  }
+
+  header {
+    background: #ff7a00;
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    text-align: center;
+    border-bottom: 4px solid #cc6200;
+    color: #fff;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.9rem;
+  }
+
+  header p {
+    margin: 0.4rem 0 0.4rem;
+    font-size: 0.95rem;
+  }
+
+  .search-bar {
+    margin-top: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-bar input {
+    padding: 0.4rem 0.6rem;
+    min-width: 220px;
+    border-radius: 0.4rem;
+    border: 1px solid #cc6200;
+    background: #331a00;
+    color: #fff7e6;
+  }
+
+  .search-bar input::placeholder {
+    color: #ffddb0;
+  }
+
+  .search-bar button {
+    border: none;
+    padding: 0.45rem 0.9rem;
+    cursor: pointer;
+    background: #ffb347;
+    color: #4d2e00;
+    border-radius: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #cc6200;
+  }
+
+  .search-bar button:hover {
+    background: #ffc46b;
+  }
+
+  .audio-player-container {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .audio-player-container audio {
+    width: 260px;
+    max-width: 90%;
+  }
+
+  .search-info {
+    font-size: 0.8rem;
+    color: #ffe0b2;
+    min-height: 1.2rem;
+    margin-top: 0.3rem;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: #331a00;
+    border-bottom: 2px solid #cc6200;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .nav button {
+    flex: 1 1 200px;
+    border: none;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    background: #ff7a00;
+    color: #fff;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s;
+    border: 2px solid #cc6200;
+  }
+
+  .nav button:hover {
+    background: #ff8c1a;
+  }
+
+  .nav button.active {
+    background: #ffa64d;
+    border-color: #ffd9b3;
+    color: #4d2e00;
+  }
+
+  .container {
+    padding: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto 2rem auto;
+  }
+
+  .topic {
+    display: none;
+    line-height: 1.6;
+    background: #331a00;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    border: 2px solid #cc6200;
+  }
+
+  .topic.active {
+    display: block;
+  }
+
+  h2 {
+    color: #ffb366;
+    margin-top: 0;
+  }
+
+  h3 {
+    color: #ffd9b3;
+    margin-top: 1.2rem;
+  }
+
+  h4 {
+    color: #ffe8cc;
+    margin-top: 0.8rem;
+  }
+
+  p {
+    margin: 0.4rem 0 0.6rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin: 0.3rem 0 0.8rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+    color: #ffd9b3;
+    margin-bottom: 1rem;
+  }
+
+  .refs {
+    margin-top: 1.2rem;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    background: #4d2600;
+    border: 1px solid #ffb366;
+    font-size: 0.9rem;
+  }
+
+  .refs strong {
+    display: block;
+    margin-top: 0.2rem;
+    margin-bottom: 0.15rem;
+    color: #ffe8cc;
+  }
+
+  .refs a {
+    color: #ffcc80;
+    text-decoration: none;
+  }
+
+  .refs a:hover {
+    text-decoration: underline;
+  }
+
+  .highlight {
+    background: #ffe082;
+    color: #4d2e00;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  .question {
+    margin: 1rem 0 1.2rem;
+    padding: 0.8rem 0.9rem;
+    border-radius: 0.5rem;
+    background: #402000;
+    border: 1px solid #cc6200;
+  }
+
+  .question ol {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .question p em {
+    color: #ffe8cc;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    .nav {
+      position: static;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Turkish History</h1>
+  <p>Click a topic below and search inside it using the box.</p>
+
+  <div class="search-bar">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search in current topic..."
+      onkeydown="if(event.key === 'Enter'){ runSearch(); }"
+    />
+    <button onclick="runSearch()">Search</button>
+  </div>
+
+  <!-- Audio player for Türk.mp3 -->
+  <div class="audio-player-container">
+    <audio id="player" controls>
+      <source src="Türk.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div id="searchInfo" class="search-info"></div>
+</header>
+
+<nav class="nav">
+  <button class="active" onclick="showTopic('t1', this)">1. Pre-Islamic Turkish History</button>
+  <button onclick="showTopic('t2', this)">2. Turkish-Islamic States</button>
+  <button onclick="showTopic('t3', this)">3. Ottoman Culture &amp; Civilization</button>
+  <button onclick="showTopic('t4', this)">4. Rise – Stagnation – Decline</button>
+  <button onclick="showTopic('t5', this)">5. 19th Century Ottoman Era</button>
+  <button onclick="showTopic('t6', this)">6. 20th Century &amp; National Struggle</button>
+  <button onclick="showTopic('t7', this)">7. Atatürk’s Reforms &amp; Principles</button>
+  <button onclick="showTopic('t8', this)">8. Contemporary Turkish &amp; World History</button>
+</nav>
+
+<div class="container">
+
+  <!-- TOPIC 1 -->
+  <div id="t1" class="topic active">
+    <h2>1. Pre-Islamic Turkish History</h2>
+    <p class="tagline">
+      Early Turkic societies from Inner Asia to Eastern Europe: political organisation, divine kingship, töre (customary law), social structure, economy, writing, inscriptions and epic tradition.
+    </p>
+
+    <h3>1. Geographic Environment and Main Turkic Groups</h3>
+    <p>
+      Pre-Islamic Turkish history unfolds mainly across the Eurasian steppe belt stretching from Manchuria and
+      Mongolia in the east to the Black Sea and Eastern Europe in the west. This vast sea of grass, with harsh
+      winters and wide open plains, favoured a mobile way of life built on horse breeding and seasonal migration.
+      Among the major Turkic and related nomadic groups we encounter in this period are the Scythians,
+      Asian Huns, European Huns, Göktürks, Uighurs and various minor confederations that rose and fell in rapid
+      succession.
+    </p>
+    <p>
+      The steppe environment shaped not only the economy but also political and military culture. States rose
+      quickly under charismatic leaders who could unite disparate clans and tribes, but they could also fragment
+      rapidly when leadership weakened or when inheritance disputes broke out. This pattern is visible in the
+      histories of most early Turkic polities.
+    </p>
+
+    <h3>2. Political Structure and the Ruler</h3>
+    <p>
+      In almost all early Turkic states the ruler stood at the centre of the political system. Known by titles
+      such as Han, Hakan or Kağan, he combined roles that in sedentary societies were often separated: he was
+      supreme commander, chief legislator, high judge and symbol of divine favour. His authority was not
+      unlimited: he was expected to consult the Kurultay – a council of nobles, clan leaders and high officers – 
+      on vital matters such as war, peace and succession.
+    </p>
+    <p>
+      One of the ruler’s most important duties was to maintain the balance between central authority and the
+      autonomy of powerful tribal leaders. If he favoured one group excessively, he risked rebellion from
+      others; if he appeared weak, allies and enemies alike would desert him. Therefore early Turkic political
+      leadership required military prowess, diplomatic skill and the ability to distribute resources and honours
+      fairly.
+    </p>
+
+    <h4>Symbols and Titles of Sovereignty</h4>
+    <p>
+      Sovereignty was represented by a set of visible symbols: the royal tent (<em>otağ</em>) in which the ruler held
+      audiences; war drums (<em>nevbet</em>) beaten to announce his presence; the <em>tuğ</em> – a standard decorated with
+      horse tails; the throne (<em>taht</em>); feather ornaments attached to the ruler’s headgear or standard; and
+      ceremonial weapons such as the bow, dagger and sword. These items were displayed at important gatherings
+      and in battle, reminding everyone of the sacred dimension of rulership.
+    </p>
+
+    <h3>3. Divine Origin of Power: Kut, Küç and Ülüg</h3>
+    <p>
+      Early Turks believed that legitimate political power originated from the Sky God, <strong>Gök Tanrı</strong>. The
+      concept of <strong>kut</strong> expressed this idea: it was a kind of divine grace or sacred charisma granted to
+      the ruling family. A person lacking kut could not legitimately rule; conversely, a ruler who abused his
+      power or failed to protect the people could be interpreted as having lost his kut, making rebellion
+      morally justifiable.
+    </p>
+    <p>
+      Alongside kut, two other notions are often mentioned: <strong>küç / güç</strong>, meaning the strength and military
+      capacity necessary to enforce decisions, and <strong>ülüg / ülüş</strong>, the right to share and distribute spoils
+      and resources. These three elements together created a religious, military and economic basis for
+      sovereignty. Because kut was considered to belong to the dynasty as a whole, the state itself was seen as
+      the joint possession of all male members, which produced chronic succession disputes after the death of
+      powerful rulers.
+    </p>
+
+    <h3>4. Customary Law: Töre</h3>
+    <p>
+      The legal system of early Turks was built on <strong>töre</strong>, a body of customs, precedents and moral norms
+      recognised by the community. Töre was not initially written; it lived in collective memory, was invoked by
+      elders and judges, and could be adjusted by the ruler with the approval of the Kurultay. It regulated
+      everything from blood feuds, theft and compensation to marriage rules, inheritance and alliances among
+      tribes.
+    </p>
+    <p>
+      Over time, particularly among the Uighurs, parts of töre began to be written down. This process did not
+      replace oral tradition but provided stability and clarity in complex cases. Four constant principles are
+      emphasised in descriptions of töre: <strong>justice</strong> (decisions must be fair), <strong>usefulness</strong> (they must
+      benefit the community), <strong>equality</strong> (similar cases require similar treatment) and <strong>humanity</strong>
+      (punishments must be proportional, not arbitrary cruelty).
+    </p>
+    <p>
+      Courts were presided over by a <strong>Yarguci</strong> (judge), typically an experienced elder familiar with
+      traditions. Punishments varied from fines and compensation to exile and execution. Long-term imprisonment
+      was rare, since in a mobile society holding large numbers of people in jails was neither practical nor
+      economical.
+    </p>
+
+    <h3>5. Social Life, Family and Gender</h3>
+    <p>
+      Social structure was layered but relatively flexible. The family constituted the smallest unit, grouped
+      into clans and then into tribes and tribal confederations. Women in early Turkic societies generally had
+      a more visible role compared to many contemporaneous sedentary societies. Sources mention <em>hatun</em>,
+      the queen or principal wife, participating in certain ceremonies and sometimes appearing alongside the
+      ruler in inscriptions and diplomatic relations.
+    </p>
+    <p>
+      Marriage was regulated by custom; monogamy was widespread, though polygamy existed among elites. The
+      extended family cooperated in herding, moving camps, raising children and defending the community.
+      Hospitality was a central value: travellers were welcomed and fed, while refusal to provide hospitality
+      could be condemned as shameful.
+    </p>
+
+    <h3>6. Economic Life: Nomadism, Trade and Early Money</h3>
+    <p>
+      The steppe economy focused on herds, especially horses, sheep and cattle. Seasonal migration between
+      summer pastures (<em>yaylak</em>) and winter quarters (<em>kışlak</em>) allowed efficient use of grasslands. Meat,
+      dairy products, wool and leather formed the basis of diet and clothing. However, steppe peoples were not
+      cut off from the settled world: they engaged in trade with Chinese, Iranian and later Islamic markets,
+      exchanging animals, hides and sometimes slaves for textiles, grain, metal products and luxury goods.
+    </p>
+    <p>
+      As trade intensified, different forms of money appeared. Metal coins (<em>yarmak</em>) circulated in some
+      regions, while cloth money like <em>kamdu</em>, <em>böz</em> and <em>kuanpoyu</em> served as media of exchange. The Uighurs
+      introduced paper money (<em>çav</em>) in certain cities, reflecting their more urbanised lifestyle and advanced
+      commercial practices, especially after they adopted Buddhism and Manichaeism and established a literate
+      bureaucratic culture.
+    </p>
+
+    <h3>7. Writing Systems and Inscriptions</h3>
+    <p>
+      The earliest Turkic inscriptions are found in the Yenisey basin, associated with the Kyrgyz, but the most
+      famous ones are the <strong>Orhun Inscriptions</strong> in Mongolia. These monuments, erected for Bilge Kağan,
+      Kül Tigin and Tonyukuk in the 8th century, are carved in a runic-style alphabet sometimes called the
+      Orhun or Göktürk script. The texts praise heroic deeds, criticise internal disunity, and warn against
+      being deceived by foreign powers, especially the Chinese.
+    </p>
+    <p>
+      These inscriptions were rediscovered in the 19th century and deciphered primarily by Vilhelm Thomsen,
+      opening a new era in Turkic philology. Later periods saw the use of Uighur script in bureaucratic and
+      religious texts, as well as Chinese, Sogdian and eventually Arabic and Persian scripts after the adoption
+      of Islam.
+    </p>
+
+    <h3>8. Oral Literature and Epic Heritage</h3>
+    <p>
+      The oral tradition of the Turks preserved a rich heritage of stories, songs and proverbs. <strong>Sav</strong>
+      expressed concise wisdom; <strong>sagu</strong> lamented the death of leaders; <strong>koşuk</strong> celebrated love, war
+      and nature. Large epic cycles recounted the origins of tribes, migrations, wars and heroic ancestors:
+      Oğuz Kağan, Alp Er Tunga, Ergenekon, Türeyiş, Göç and the monumental Manas epic belong to this world.
+    </p>
+    <p>
+      These epics are valuable not only as literature but also as sources for values and mentalities. They
+      emphasise courage, loyalty to clan and ruler, cleverness in warfare, respect for oaths and deep attachment
+      to the homeland. Later written literature in both pre-Islamic and Islamic periods drew heavily on this
+      epic and proverbial inheritance.
+    </p>
+
+    <div class="refs">
+      <strong>Video references:</strong>
+      <a href="https://www.youtube.com/watch?v=y60ailg2plA" target="_blank">The History of the Turkic Peoples (YouTube)</a><br/>
+      <a href="https://www.youtube.com/watch?v=cg4VYTLkAZE" target="_blank">Before the Ottomans: Rise of the Göktürks</a><br/>
+      <a href="https://www.youtube.com/watch?v=FTufvfcRb9g" target="_blank">Tengrism – Original Religion of the Turks</a>
+
+      <strong>Reading references:</strong>
+      <a href="https://www.britannica.com/topic/Turkic-peoples" target="_blank">Turkic peoples – Encyclopaedia Britannica</a><br/>
+      <a href="https://www.britannica.com/place/the-Steppe/The-era-of-Turkic-predominance-550-1200" target="_blank">The Steppe – Turkic predominance</a>
+    </div>
+  </div>
+
+  <!-- TOPIC 2 -->
+  <div id="t2" class="topic">
+    <h2>2. Turkish-Islamic States</h2>
+    <p class="tagline">
+      From the first Muslim Turkic dynasties to the Great Seljuks and Anatolian Seljuks: Islamization, administrative councils, land system, army, guilds, and intellectual life.
+    </p>
+
+    <h3>1. Islamization of the Turks</h3>
+    <p>
+      The adoption of Islam by Turkic groups was not a single event but a long historical process. Beginning in
+      the 8th–9th centuries, Turks living along the frontier between the Islamic world and the steppe gradually
+      encountered Muslim traders, missionaries and soldiers. Some groups entered the Abbasid military as
+      mercenaries, where they learned Arabic, Islamic law and administrative practices. Others converted through
+      contact with Sufi sheikhs who addressed nomadic beliefs in a flexible manner.
+    </p>
+    <p>
+      By the 10th century, major Turkic dynasties such as the <strong>Karakhanids</strong> officially adopted Islam.
+      This brought them into closer cultural interaction with Persian and Arab societies. It also gave them a
+      new religious identity that transcended tribal divisions and allowed them to present themselves as
+      protectors of the Muslim community.
+    </p>
+
+    <h3>2. Major Turkish-Islamic Dynasties</h3>
+    <h4>Karakhanids</h4>
+    <p>
+      The Karakhanids ruled in Transoxiana and parts of Central Asia. They are significant as one of the first
+      Muslim Turkic dynasties. Under their rule, cities such as Bukhara, Samarkand and Kashgar flourished as
+      centres of learning and trade. The famous work <em>Kutadgu Bilig</em> (Wisdom of Royal Glory) reflects a synthesis
+      of Turkic political ideals with Islamic ethics, discussing just rule, consultation, and the moral duties of
+      the ruler toward his subjects.
+    </p>
+
+    <h4>Ghaznavids</h4>
+    <p>
+      The Ghaznavids, based in present-day Afghanistan, expanded their domains into Iran and the Indian
+      subcontinent. Mahmud of Ghazni conducted numerous campaigns into northern India, spreading both political
+      control and Islamic influence. The court of Ghazni attracted scholars and poets such as Ferdowsi, creator
+      of the Persian epic <em>Shahnameh</em>. Although the dynasty was eventually weakened by internal strife and
+      Seljuk pressure, it played an important role in linking Central Asia, Iran and India.
+    </p>
+
+    <h4>Great Seljuks</h4>
+    <p>
+      The <strong>Great Seljuk Empire</strong> emerged in the 11th century as a powerful Turkic-Muslim state stretching
+      from Central Asia to Anatolia and the Eastern Mediterranean. They defeated the Ghaznavids at Dandanakan,
+      entered Iran and Iraq, and took Baghdad, where they assumed the role of protectors of the Abbasid caliph.
+      The Seljuks defended the Islamic world against the Byzantine Empire and later Crusaders, while also
+      patronising scholars such as Nizam al-Mulk, who wrote the famous political treatise <em>Siyasatnama</em>.
+    </p>
+
+    <h4>Anatolian Seljuks</h4>
+    <p>
+      After the battle of Manzikert (1071), Seljuk and other Turkic groups advanced into Anatolia. The
+      <strong>Anatolian Seljuk Sultanate</strong>, centred on Konya, developed a distinct political and cultural
+      identity. It built caravanserais, madrasas and mosques, turning Anatolia into a significant Islamic
+      land. Trade routes between the Black Sea, Mediterranean and Iran passed through its territory, generating
+      wealth and stimulating urban growth in cities such as Kayseri, Sivas and Konya.
+    </p>
+
+    <h3>3. Administrative Divans and State Structure</h3>
+    <p>
+      Turkish-Islamic states integrated older Turkic institutions with Islamic and Iranian models. At the top
+      stood the sultan, advised and supported by the <strong>divans</strong>. The <strong>Divan-ı Saltanat</strong> (or Divan-ı
+      Ali) functioned as the supreme council: it discussed war, peace, taxation, appointments and foreign
+      relations. High officials, including the vizier, military commanders and chief judges, attended its
+      meetings.
+    </p>
+    <p>
+      The <strong>Divan-ı Arz</strong> supervised military affairs; the <strong>Divan-ı İstifa</strong> dealt with finance; the
+      <strong>Divan-ı İşraf</strong> inspected provincial administration and prevented abuses; and the
+      <strong>Divan-ı Tuğra</strong> drafted and sealed official documents. Additional specialised councils such as
+      those regulating postal services, provincial land distribution and security show the growing
+      differentiation of state functions.
+    </p>
+
+    <h3>4. Land System and Ikta</h3>
+    <p>
+      The <strong>ikta system</strong> was a mechanism for linking land, taxation and military service. Instead of
+      paying officials and soldiers directly from the central treasury, the state granted them the right to
+      collect taxes from designated areas. In return, they maintained a certain number of cavalrymen and ensured
+      local order. This arrangement reduced cash expenditures, encouraged local security, and integrated
+      landowners into the military structure.
+    </p>
+    <p>
+      However, if not carefully monitored, ikta could lead to the emergence of semi-independent local powers.
+      Therefore, the inspection divan and the central chancery played crucial roles in keeping records and
+      correcting abuses. Over time, the ikta model influenced later systems such as the Ottoman tımar.
+    </p>
+
+    <h3>5. Army and Military Culture</h3>
+    <p>
+      Military forces combined several elements: palace-based <strong>gulam</strong> (mamluk-style) troops, provincial
+      cavalry maintained through ikta, contingents provided by princes and atabeys, and sometimes tribal auxiliaries.
+      The emphasis on cavalry and mobility reflected both steppe traditions and the geographic realities of
+      Central Asia and Iran.
+    </p>
+    <p>
+      Campaigns required complex logistics. Divan-ı Arz supervised supply lines, salaries and equipment.
+      Fortresses were constructed or adapted along strategic routes; cities such as Rey, Isfahan and Konya
+      served as administrative and military hubs. The Seljuks also invested in roads and caravanserais, which
+      facilitated both trade and rapid troop movements.
+    </p>
+
+    <h3>6. Urban Life, Ahilik and Economy</h3>
+    <p>
+      In Anatolia, especially under the Anatolian Seljuks, towns grew into vibrant commercial and cultural
+      centres. Guilds of artisans and merchants organised economic life. The most famous of these organisations
+      was <strong>Ahilik</strong>, the Ahi Brotherhood. It combined professional training with ethical and spiritual
+      education inspired by Islamic principles and Sufi teachings.
+    </p>
+    <p>
+      In an Ahi lodge, a young apprentice learned not only his craft – such as leatherworking, metalworking or
+      textiles – but also honesty in trade, generosity, humility and fairness. Prices and quality standards were
+      supervised, preventing fraud and protecting both consumers and fellow craftsmen. The Ahi system thus
+      functioned as a social safety net and moral compass in Anatolian cities.
+    </p>
+
+    <h3>7. Intellectual and Cultural Flourishing</h3>
+    <p>
+      Turkish-Islamic states contributed to the broader Islamic civilisation in many ways. They supported
+      madrasas where scholars studied Qur’anic exegesis, hadith, law, theology, philosophy and sometimes
+      mathematics and medicine. The Nizamiyya madrasas, founded by Nizam al-Mulk in Seljuk domains, became
+      prototypes for later Islamic educational institutions.
+    </p>
+    <p>
+      Poetry and Sufism flourished. Mevlana Celaleddin Rumi’s <em>Masnavi</em> explored mystical love and the
+      journey of the soul. Yunus Emre expressed deep spiritual ideas in simple Turkish, shaping Anatolian
+      religious culture. Hacı Bektaş-ı Veli’s teachings, collected in the <em>Makalat</em>, influenced both Sufi
+      and popular beliefs. Architects, calligraphers and artisans left behind mosques, madrasas, bridges and
+      caravanserais that still define the landscape of modern Turkey and Iran.
+    </p>
+
+    <div class="refs">
+      <strong>Video references:</strong>
+      <a href="https://www.youtube.com/watch?v=3oUB5KzLsmI" target="_blank">Why Did the Turks Become Muslim? (documentary)</a><br/>
+      <a href="https://www.youtube.com/watch?v=F4Go6EQhi7A" target="_blank">The Karakhanid State – early Muslim Turkic polity</a><br/>
+      <a href="https://www.youtube.com/watch?v=yvH7Yw_pCgo" target="_blank">The Seljuks: Builders of an Empire</a>
+
+      <strong>Reading references:</strong>
+      <a href="https://www.britannica.com/topic/Seljuq" target="_blank">Seljuq – Encyclopaedia Britannica</a><br/>
+      <a href="https://www.britannica.com/place/Iran/The-Seljuqs-and-the-Mongols" target="_blank">The Seljuqs and the Mongols – Iran</a>
+    </div>
+  </div>
+
+  <!-- TOPIC 3 -->
+  <div id="t3" class="topic">
+    <h2>3. Ottoman Culture &amp; Civilization</h2>
+    <p class="tagline">
+      The social and institutional world of the Ottoman Empire: central and provincial administration, land and tax systems, religious structure, economy, architecture and arts.
+    </p>
+
+    <h3>1. Central Administration and the Sultan</h3>
+    <p>
+      The Ottoman Empire inherited and transformed many institutions from earlier Islamic and Turkic states.
+      At the top stood the sultan, whose authority combined military command, legislative initiative and the
+      role of supreme judge. However, daily governance was largely carried out by a professional bureaucracy
+      and the imperial council. The sultan’s power was symbolised by the palace, the throne, the sword of
+      Osman used in enthronement ceremonies and a set of titles stressing his role as both ruler and protector
+      of the Muslim community.
+    </p>
+    <p>
+      The <strong>Divan-ı Hümayun</strong>, or imperial council, met regularly to discuss state affairs. Members included
+      the grand vizier, chief military judges of Anatolia and Rumelia (<em>kazaskers</em>), treasurers, the nişancı
+      (head of the chancery) and, in later periods, representatives of the navy and other offices. Initially the
+      sultan sat in person; later he watched and listened from behind a screen, symbolising a more distant but
+      still decisive authority.
+    </p>
+
+    <h3>2. Provincial Administration and the Millet System</h3>
+    <p>
+      The empire’s territory was divided into provinces (<em>eyalet</em>), districts (<em>sancak</em>), subdistricts
+      (<em>kaza</em>) and villages. Governors and local officials were responsible for implementing imperial
+      orders, collecting taxes and maintaining security. The <strong>kadı</strong>, or judge, played a central role in each
+      kaza, not only as a judicial authority but as a recorder of contracts, registers and local decisions.
+    </p>
+    <p>
+      The <strong>millet system</strong> was a distinctive aspect of Ottoman civilisation. Religious communities such as
+      Greek Orthodox Christians, Armenians and Jews were organised into semi-autonomous millets under their own
+      spiritual leaders. These communities administered personal status law (marriage, divorce, inheritance) for
+      their members and maintained schools and charitable institutions. This arrangement allowed a high degree
+      of religious pluralism, even though Muslims enjoyed certain legal and fiscal privileges.
+    </p>
+
+    <h3>3. Land, Taxation and the Tımar System</h3>
+    <p>
+      The majority of land in the empire was classified as <strong>miri</strong> – technically owned by the state but
+      granted to individuals for use and revenue collection. It was subdivided into <strong>has</strong>, <strong>zeamet</strong> and
+      <strong>tımar</strong> according to annual income. Holders of these grants were expected to equip armoured cavalry
+      and to appear in the field when called. In this way, the <strong>tımar system</strong> supported a substantial
+      provincial army without requiring high cash expenditures from the central treasury.
+    </p>
+    <p>
+      Peasants who cultivated the land were not serfs in the European sense; they were free subjects, but they
+      owed taxes and various dues. Registers called <em>tahrir defterleri</em> recorded villages, households, crops and
+      tax obligations. In addition to tımar land, there were private lands (<strong>mülk</strong>) and especially
+      <strong>vakıf</strong> lands, whose revenues financed mosques, schools, fountains, hospitals and other institutions.
+    </p>
+
+    <h3>4. Economic Mentality and Guilds</h3>
+    <p>
+      The Ottoman economic mentality aimed primarily at social stability and a steady supply of basic goods,
+      rather than maximisation of profit. <strong>Provisionism</strong> required that food and essential commodities be
+      available and affordable in cities. To achieve this, authorities regulated trade routes, storage, and
+      distribution and sometimes banned exports in times of scarcity.
+    </p>
+    <p>
+      <strong>Traditionalism</strong> favoured continuity: sudden changes in production or consumption were seen as
+      disruptive. <strong>Fiscalism</strong> meant that the state sought to ensure reliable revenue flows to finance the
+      army and administration. Instruments such as the <strong>narh</strong> (fixed prices), <strong>gedik</strong> (shop/workshop
+      licenses) and temporary tax farming were used to manage economic life.
+    </p>
+    <p>
+      In urban centres, crafts and trades were organised into <strong>guilds (lonca)</strong>. Each guild trained
+      apprentices, supervised quality, and enforced ethical norms. Religious rituals and charitable activities
+      were woven into guild life, reflecting the integration of economic and spiritual concerns.
+    </p>
+
+    <h3>5. Social Institutions and Daily Life</h3>
+    <p>
+      Ottoman cities were dotted with public institutions that shaped everyday life. <strong>Imarets</strong> distributed
+      free food to the poor, travellers and students; <strong>hans</strong> and caravanserais offered lodging and security
+      for merchants and animals; <strong>hamams</strong> (public baths) provided hygiene and social interaction. <strong>Külliyes</strong>,
+      large complexes built around a central mosque, included madrasas, libraries, hospitals, kitchens and
+      fountains, symbolising the Ottoman ideal of combining worship, learning, charity and public service in one
+      physical space.
+    </p>
+    <p>
+      Religious scholars (<strong>ulema</strong>) formed a respected social group responsible for interpreting Islamic
+      law and teaching in madrasas. Sufi orders created networks of lodges across the empire; they attracted
+      people from diverse backgrounds and spread mystical teachings, music and poetry.
+    </p>
+
+    <h3>6. Architecture, Calligraphy and the Arts</h3>
+    <p>
+      Ottoman architecture synthesised elements from earlier Islamic, Byzantine and local traditions. In the
+      classical age, <strong>Mimar Sinan</strong> perfected the use of the central dome flanked by semi-domes and
+      buttresses. His buildings, from the Şehzade Mosque to Süleymaniye and Selimiye, show precise proportional
+      systems, controlled light and acoustics, and a balance between monumental scale and human intimacy.
+    </p>
+    <p>
+      Interior spaces were decorated with calligraphy, tiles and carved stone. <strong>Calligraphy</strong> (hat) turned
+      Qur’anic verses and pious phrases into visual art; styles such as thuluth, naskh, ta’liq and later
+      <em>rik‘a</em> evolved under master calligraphers. <strong>Iznik tiles</strong>, with their cobalt blue, turquoise and
+      later red colours, covered walls of mosques and palaces with floral and geometric designs.
+    </p>
+    <p>
+      <strong>Miniature painting</strong> illustrated manuscripts, depicting battles, processions, city views and court
+      ceremonies. Rather than realistic perspective, emphasis was placed on narrative clarity and symbolic
+      representation. Music, particularly in the form of classical Ottoman art music and Sufi devotional music,
+      formed another important dimension of cultural life.
+    </p>
+
+    <div class="refs">
+      <strong>Video references:</strong>
+      <a href="https://www.youtube.com/watch?v=ajRdOHmYw74" target="_blank">The Entire History of the Ottoman Empire</a><br/>
+      <a href="https://www.youtube.com/watch?v=M4yBz7cQBjQ" target="_blank">The Ottoman Empire: A World of Difference</a>
+
+      <strong>Reading references:</strong>
+      <a href="https://www.britannica.com/place/Ottoman-Empire" target="_blank">Ottoman Empire – Encyclopaedia Britannica</a><br/>
+      <a href="https://www.britannica.com/art/Islamic-arts" target="_blank">Islamic arts – architecture, calligraphy and more</a>
+    </div>
+  </div>
+
+  <!-- TOPIC 4 – VERY DETAILED VERSION -->
+  <div id="t4" class="topic">
+    <h2>4. Rise, Stagnation and Decline of the Ottoman Empire</h2>
+    <p class="tagline">
+      From the classical age of expansion to internal crises, European military–economic transformation, and the first major territorial losses: how a world empire tried to adapt to a changing world.
+    </p>
+
+    <h3>1. Periodisation: Classical Age, Stagnation and Decline?</h3>
+    <p>
+      Historians often divide Ottoman history between the mid-15th and late 18th centuries into three broad phases:
+      the <strong>Rise / Classical Age</strong>, the so-called <strong>Stagnation</strong>, and the <strong>Decline</strong>. These labels are convenient
+      but also somewhat misleading. “Stagnation” does not mean the complete absence of change; “decline” does not
+      mean continuous collapse without any recovery. In reality, each phase contained complex mixtures of success
+      and failure, adaptation and resistance, innovation and conservatism.
+    </p>
+    <p>
+      The <strong>Rise</strong> roughly covers the period from the conquest of Constantinople (1453) to the death of
+      Süleyman the Magnificent (1566), when the empire expanded, central institutions matured and cultural
+      production reached a classical form. The <strong>Stagnation</strong> label is usually applied to the late 16th and
+      17th centuries, when the empire faced new structural problems but still remained a major power. The
+      <strong>Decline</strong> phase, especially from the Treaty of Karlowitz (1699) to the late 18th century, saw
+      growing military defeats, territorial losses and the need for deeper reforms, while the empire struggled to
+      respond to rapidly changing European conditions.
+    </p>
+
+    <h3>2. Rise of the Empire: From Conquest to Classical Structure (1451–1566)</h3>
+    <p>
+      The rise of the Ottoman Empire in this period is associated with strong sultans, efficient centralisation and
+      a flexible administrative system capable of incorporating new territories and populations. The conquest of
+      strategic cities, the control of trade routes and the development of a disciplined army all contributed to
+      this process.
+    </p>
+
+    <h4>2.1. Mehmed II (Fatih Sultan Mehmed) and the Conquest of Constantinople</h4>
+    <p>
+      Mehmed II ascended the throne with a clear strategic vision: to capture Constantinople, the long-standing
+      Byzantine capital and a symbolic centre of Christian power. In 1453, after careful preparation, artillery
+      innovations and a combination of naval and land operations, he conquered the city. This event:
+    </p>
+    <ul>
+      <li>Ended the Byzantine Empire and removed a political rival in the region.</li>
+      <li>Gave the Ottomans control over the Bosporus and key trade routes between the Black Sea and the Mediterranean.</li>
+      <li>Allowed the sultan to claim universal imperial titles, combining Islamic legitimacy with the legacy of Rome.</li>
+    </ul>
+    <p>
+      After the conquest, Mehmed II worked to repopulate and rebuild the city, now called Istanbul. He invited
+      Muslims, Greeks, Armenians, Jews and other groups to settle there, granting privileges and founding
+      religious, commercial and educational institutions. He also codified laws (<em>kanunnames</em>) that defined
+      relations between state, subjects and timar-holders, laying the foundations of the classical administrative
+      order.
+    </p>
+
+    <h4>2.2. Bayezid II and Consolidation</h4>
+    <p>
+      Bayezid II’s reign focused more on <strong>consolidation</strong> than on large-scale conquest. He worked to stabilise
+      finances, strengthen the navy in the eastern Mediterranean and integrate newly acquired territories. Internal
+      challenges such as dynastic rivalries and religiously motivated revolts (e.g. Şahkulu rebellion) showed that
+      the empire, while powerful, still faced tensions between central authority and diverse provincial groups.
+    </p>
+
+    <h4>2.3. Selim I (Yavuz) and the Turn to the East</h4>
+    <p>
+      Selim I shifted the main axis of expansion toward the <strong>Middle East</strong>. His victories over the Safavids at
+      Çaldıran (1514) and over the Mamluks at Mercidabık and Ridaniye (1516–1517) brought eastern Anatolia, Syria,
+      Palestine, Egypt and the holy cities of Mecca and Medina under Ottoman control. As a result:
+    </p>
+    <ul>
+      <li>The Ottomans became the pre-eminent Sunni power in the Islamic world.</li>
+      <li>They controlled the pilgrimage routes and key grain routes from Egypt to Istanbul.</li>
+      <li>Cairo and Damascus became important provincial capitals, linking the empire more closely to Arab lands.</li>
+    </ul>
+    <p>
+      The acquisition of these territories also meant dealing with new administrative, fiscal and religious
+      complexities, as the empire now governed large urban centres with rich scholarly traditions and long-standing
+      local elites.
+    </p>
+
+    <h4>2.4. Süleyman the Magnificent: Classical Zenith</h4>
+    <p>
+      Under <strong>Süleyman I</strong>, often called “the Magnificent” in Europe and “Kanuni” (Lawgiver) in Ottoman memory,
+      the empire reached its greatest territorial extent and institutional sophistication. His reign combined
+      military expansion with legal codification and architectural patronage.
+    </p>
+    <p>
+      In Europe, he advanced into Hungary (Battle of Mohács, 1526), besieged Vienna (1529) and confronted the
+      Habsburgs in Central Europe and the Mediterranean. In the east, he continued the struggle with the Safavids
+      and secured important cities such as Baghdad. The navy, under admirals like Barbarossa Hayreddin Pasha,
+      became a dominant force in the Mediterranean, challenging Spanish and Venetian fleets.
+    </p>
+    <p>
+      Süleyman’s legal work is equally significant. He ordered comprehensive <strong>kanunnames</strong> that harmonised earlier
+      regulations and sultanic decrees with Islamic principles. These codes regulated taxation, land tenure,
+      criminal offences and administrative hierarchies. They did not replace Islamic law but supplemented it,
+      creating a predictable legal framework that enhanced state authority and helped integrate diverse regions.
+    </p>
+
+    <h3>3. Stagnation: Structural Strains and Changing Balance of Power (Late 16th–17th Centuries)</h3>
+    <p>
+      By the late 16th century, the empire faced new challenges both inside and outside its borders. The label
+      “stagnation” describes a period in which existing institutions came under stress, while the external
+      environment changed faster than the empire’s ability to adapt. Nevertheless, the Ottomans remained a
+      formidable power and continued to win wars and manage complex administrations.
+    </p>
+
+    <h4>3.1. Economic and Demographic Pressures</h4>
+    <p>
+      Several interconnected economic factors undermined the stability of the classical system:
+    </p>
+    <ul>
+      <li>
+        <strong>Price Revolution:</strong> The influx of silver from the Americas into Europe caused widespread inflation.
+        As silver flowed through Mediterranean and Balkan markets, Ottoman prices rose, but many soldiers and
+        officials were paid fixed nominal salaries. Their purchasing power declined, fuelling unrest.
+      </li>
+      <li>
+        <strong>Demographic Growth:</strong> Population increase in Anatolia and the Balkans put pressure on land and rural
+        communities, leading to land disputes and migration.
+      </li>
+      <li>
+        <strong>Disruption of Trade Routes:</strong> The rise of Atlantic trade reduced the relative importance of older
+        Mediterranean and Silk Road routes, affecting customs revenues and commercial patterns.
+      </li>
+    </ul>
+
+    <h4>3.2. Crisis of the Tımar System and Celali Rebellions</h4>
+    <p>
+      The <strong>tımar system</strong>, which had linked provincial cavalry service to land revenues, began to deteriorate.
+      Wars requiring cash payments, increasing corruption and the selling or illegal transfer of timars weakened
+      the link between landholding and military duty. Many peasants abandoned their lands due to war, tax
+      pressure or local abuses.
+    </p>
+    <p>
+      In this context, large-scale rural uprisings known as the <strong>Celali rebellions</strong> erupted, particularly in
+      Anatolia. Rebel leaders, sometimes former soldiers or local notables, mobilised discontented peasants,
+      deserters and bandits. These movements disrupted agriculture, trade and security, forcing the state to
+      launch numerous campaigns to restore order. The Celali crises revealed that the centre could no longer
+      easily impose its will on the provinces using traditional instruments alone.
+    </p>
+
+    <h4>3.3. Janissaries, Palace Politics and Succession</h4>
+    <p>
+      The <strong>janissary corps</strong>, originally an elite infantry force recruited through the devşirme system and
+      trained in strict discipline, gradually changed in character. Over time, recruitment rules loosened,
+      membership became hereditary or open to outsiders and many janissaries engaged in urban trades and
+      crafts. They gained political influence, sometimes intervening directly in palace politics to depose sultans
+      or grand viziers.
+    </p>
+    <p>
+      At the same time, succession practices evolved. Earlier sultans had often participated in provincial
+      governorships and military campaigns before ascending the throne, gaining experience. Later princes
+      frequently spent their youth in the palace, in semi-isolation, which sometimes limited their training in
+      political and military leadership. Intrigues within the harem and between factions of the court further
+      complicated decision-making.
+    </p>
+
+    <h4>3.4. Military Technology and European Rivals</h4>
+    <p>
+      European states, particularly in Central and Western Europe, reformed their armies, adopting new drill
+      systems, firearms tactics and fortification designs. They also developed more effective fiscal institutions
+      to support standing armies. The Ottomans continued to use artillery and firearms, but reforms were uneven
+      and sometimes blocked by conservative groups worried about losing privileges.
+    </p>
+    <p>
+      Despite these difficulties, the empire still achieved notable successes in the 17th century, such as
+      Köprülü-era campaigns and temporary gains in Hungary. However, defeats in prolonged wars – like the long
+      struggle against the Habsburgs and the ultimate failure at the Second Siege of Vienna in 1683 – signalled
+      that the balance of power was shifting against the Ottomans.
+    </p>
+
+    <h3>4. Decline and First Major Territorial Losses (Late 17th–18th Centuries)</h3>
+    <p>
+      The “decline” phase is marked not only by defeats but also by attempts at reform and adaptation. The empire
+      confronted the reality that its existing institutions, while still functioning, were no longer sufficient to
+      compete with increasingly centralised and industrialising European powers.
+    </p>
+
+    <h4>4.1. The Treaty of Karlowitz (1699) – A Turning Point</h4>
+    <p>
+      After the failed Second Siege of Vienna (1683), a broad European coalition formed against the Ottomans,
+      including Austria, Poland, Venice and later Russia. Years of warfare exhausted the empire. The resulting
+      <strong>Treaty of Karlowitz</strong> in 1699 forced the Ottomans to cede large territories in Central Europe, including
+      much of Hungary and Transylvania, to the Habsburgs, and lands to Poland and Venice.
+    </p>
+    <p>
+      Karlowitz was significant because it:
+    </p>
+    <ul>
+      <li>Marked the first time the empire ceded large, historically contested territories in Europe by formal treaty.</li>
+      <li>Symbolised a shift from an expanding frontier empire to a power defending its remaining borders.</li>
+      <li>Encouraged European powers to see the Ottomans as a declining empire open to further pressure.</li>
+    </ul>
+
+    <h4>4.2. 18th Century: War, Diplomacy and Tulip Era</h4>
+    <p>
+      The 18th century saw alternating periods of war and relative peace. The Ottomans fought several conflicts
+      with Russia and Austria, sometimes regaining territories but often losing strategic fortresses and access to
+      important rivers and seas. At the same time, diplomacy became more important; permanent embassies and
+      emissaries gained experience in European capitals, observing new military and administrative techniques.
+    </p>
+    <p>
+      The <strong>Tulip Era</strong> (Lâle Devri) in the early 18th century, especially under Sultan Ahmed III and Grand
+      Vizier Nevşehirli Damat İbrahim Pasha, is remembered as a period of relative peace, cultural experimentation
+      and selective Westernisation. Printing presses were established (despite resistance), new gardens and
+      palaces built in Istanbul, and contact with European art and lifestyle increased. Critics, however, accused
+      the elite of extravagance and detachment from the broader population’s problems.
+    </p>
+
+    <h4>4.3. Treaty of Küçük Kaynarca (1774) and Russian Expansion</h4>
+    <p>
+      The advance of the Russian Empire under rulers like Catherine the Great created a new and dangerous rival in
+      the north. The Russo–Ottoman war ending in the <strong>Treaty of Küçük Kaynarca</strong> (1774) had far-reaching
+      consequences. Russia gained access to the Black Sea, the right to protect Orthodox Christians within the
+      Ottoman Empire and the ability to intervene diplomatically on this basis.
+    </p>
+    <p>
+      These concessions undermined Ottoman sovereignty in two ways: territorially, by losing strategic ports and
+      fortresses; and politically, by giving Russia a legal pretext to interfere in the empire’s internal affairs.
+      Over time, such provisions encouraged other European powers to adopt similar protective roles over different
+      communities, fragmenting the empire’s authority.
+    </p>
+
+    <h4>4.4. Reform Attempts and the Road to the 19th Century</h4>
+    <p>
+      Faced with repeated military setbacks, Ottoman statesmen wrote reform memoranda analysing the causes of
+      decline. They pointed to:
+    </p>
+    <ul>
+      <li>Corruption in tax collection and provincial administration.</li>
+      <li>Loss of discipline in the janissary corps and outdated tactics.</li>
+      <li>Neglect of science, technology and modern artillery techniques.</li>
+      <li>Weak control over remote provinces and the rise of powerful local notables.</li>
+    </ul>
+    <p>
+      Some attempts at change were made even before the Tanzimat. New military units were organised along European
+      lines; engineering schools and military academies began teaching modern science and mathematics; translations
+      of European works slowly entered intellectual circles. However, resistance from vested interests and limited
+      financial resources restricted the depth and speed of these reforms.
+    </p>
+    <p>
+      By the end of the 18th century, it had become clear that the empire could no longer rely on its classical
+      institutions alone. The 19th century would bring more radical reorganisation efforts – including the Tanzimat
+      and later constitutional experiments – as the Ottomans tried to rebuild their state in the face of nationalism,
+      industrialisation and imperialist pressures.
+    </p>
+
+    <div class="refs">
+      <strong>Suggested video references:</strong>
+      <a href="https://www.youtube.com/watch?v=zNRJ38am7gE" target="_blank">The ENTIRE History of the Ottoman Empire (documentary)</a><br/>
+      <a href="https://www.youtube.com/watch?v=TDLmsiqhgns" target="_blank">Rise of the Ottoman Empire – From Kosovo to Constantinople</a><br/>
+      <a href="https://www.youtube.com/watch?v=7TIt-Ah69OI" target="_blank">Reform and Decline of the Ottomans</a>
+
+      <strong>Suggested reading references:</strong>
+      <a href="https://www.britannica.com/place/Ottoman-Empire/The-decline-of-the-Ottoman-Empire-1566-1807" target="_blank">
+        The decline of the Ottoman Empire (1566–1807) – Encyclopaedia Britannica
+      </a><br/>
+      <a href="https://www.britannica.com/summary/Decline-of-the-Ottoman-Empire" target="_blank">
+        Summary: Decline of the Ottoman Empire
+      </a>
+    </div>
+  </div>
+
+  <!-- TOPIC 5 – VERY DETAILED VERSION -->
+  <div id="t5" class="topic">
+    <h2>5. 19th Century Ottoman Era</h2>
+    <p class="tagline">
+      From early centralization attempts and Tanzimat to the First Constitutional Period, Abdulhamid II’s rule, rising nationalism, great power rivalry and the struggle to keep the empire alive.
+    </p>
+
+    <h3>1. The Long 19th Century and the “Eastern Question”</h3>
+    <p>
+      The 19th century for the Ottoman Empire is often called the “long 19th century” because its key dynamics
+      began in the late 18th century and continued into the early 20th century. During this era, the empire faced
+      intense pressure from both internal and external forces. Internally, there were problems of administrative
+      corruption, outdated military structures, fiscal deficits and local power-holders challenging central
+      authority. Externally, industrialising European powers – especially Britain, France, Austria and Russia – 
+      sought to expand their economic and political influence, often at the expense of the empire.
+    </p>
+    <p>
+      These rivalries were commonly referred to as the <strong>Eastern Question</strong>: what would happen to the lands and
+      peoples of the Ottoman Empire as it seemed to weaken? Each great power wanted to prevent its rivals from
+      gaining too much influence over Ottoman territories, while also pursuing its own strategic and economic
+      interests. As a result, the empire found itself in a delicate balance, sometimes supported by one power
+      against another, but rarely treated as a fully equal partner.
+    </p>
+
+    <h3>2. Early Centralisation and the Legacy of Selim III</h3>
+    <p>
+      Before the famous Tanzimat reforms, significant attempts at change were already underway. Sultan
+      <strong>Selim III</strong> (1789–1807) recognised that the traditional military forces, especially the janissaries, were
+      no longer adequate against modern European armies. He created a new, Western-style army called
+      <strong>Nizam-ı Cedid</strong> (“New Order”), introduced new uniforms, training and artillery, and tried to modernise
+      the fiscal system to pay for these reforms.
+    </p>
+    <p>
+      However, the janissaries and conservative groups saw these changes as a threat to their privileges. They
+      organised revolts, eventually deposing Selim III. Although his project failed, Selim’s experience showed that
+      any serious reform of the army or administration would inevitably challenge entrenched interests. It also
+      provided a blueprint for later reformers who understood that the empire must modernise or face further
+      decline.
+    </p>
+
+    <h3>3. Mahmud II and the Destruction of the Janissaries</h3>
+    <p>
+      Sultan <strong>Mahmud II</strong> (1808–1839) continued the efforts of Selim III but acted more decisively. He gradually
+      prepared the ground for a confrontation with the janissaries by creating alternative military forces and
+      building support among provincial notables and segments of the ulema. In 1826, when the janissaries openly
+      revolted against his new military organisation, Mahmud II ordered loyal troops and artillery to attack their
+      barracks. This event, known as the <strong>Auspicious Incident</strong> (<em>Vaka-i Hayriye</em>), resulted in the destruction
+      of the janissary corps.
+    </p>
+    <p>
+      With the janissaries eliminated, Mahmud II could centralise power more effectively. He founded a new,
+      regular army based on conscription and European-style training, established modern ministries, reorganised
+      the provincial administration and sent students to Europe to study military science and engineering. He
+      adopted Western-style clothing for officials, symbolising the shift toward a new bureaucratic culture.
+    </p>
+
+    <h3>4. Tanzimat: The Gülhane Edict of 1839</h3>
+    <p>
+      The <strong>Tanzimat Edict</strong> (<em>Gülhane Hatt-ı Hümayunu</em>), proclaimed in 1839 at the Gülhane Park in Istanbul,
+      is often seen as the official starting point of the Tanzimat Era. Prepared under the influence of statesmen
+      like Mustafa Reşid Pasha, the edict promised:
+    </p>
+    <ul>
+      <li>Guarantees for the life, honour and property of all subjects, Muslim and non-Muslim alike.</li>
+      <li>Regular and fair taxation instead of arbitrary levies.</li>
+      <li>Orderly military conscription and service periods.</li>
+      <li>Reform of the judicial system to ensure public trials and legal security.</li>
+    </ul>
+    <p>
+      Although many of these promises were not fully realised at once, the Edict represented a major shift: the
+      Ottoman state now publicly declared that it would bind itself to certain principles of legality and equality.
+      This changed the relationship between ruler and subjects from one based largely on traditional obedience to
+      one that increasingly invoked rights and laws.
+    </p>
+
+    <h3>5. Tanzimat in Practice: Administration, Law and Society</h3>
+    <p>
+      In the following decades, a series of reforms attempted to implement the spirit of Tanzimat. New civil and
+      commercial codes inspired by French models were introduced, and mixed commercial courts with both Muslim
+      and non-Muslim judges were created to handle cases involving foreigners or members of different communities.
+      Provincial reform laws sought to standardise administration, reduce corruption and ensure more direct
+      control from the centre.
+    </p>
+    <p>
+      Education was another key area. New <strong>rüşdiye</strong> secondary schools, teacher training institutions and
+      specialised schools of administration, engineering and medicine were established. These schools trained a
+      new generation of officials who were fluent in foreign languages, familiar with European political thought
+      and experienced in modern bureaucratic practice. Over time, they formed the backbone of a centralising,
+      professional state elite.
+    </p>
+
+    <h3>6. The Islahat Edict of 1856 and Equality of Non-Muslims</h3>
+    <p>
+      After the <strong>Crimean War</strong> (1853–1856), in which the Ottoman Empire fought alongside Britain and France
+      against Russia, European powers pushed for further reforms, especially concerning the legal position of
+      Christians within the empire. The <strong>Islahat Edict</strong> of 1856 reaffirmed many Tanzimat principles but added
+      more explicit guarantees:
+    </p>
+    <ul>
+      <li>Formal equality of all subjects regardless of religion.</li>
+      <li>Access of non-Muslims to state offices and military service (in theory).</li>
+      <li>Reforms in the organisation of Christian communities and their churches.</li>
+    </ul>
+    <p>
+      While these reforms aimed to create a more inclusive imperial citizenship and to reduce European
+      interference, they also generated tension. Some Muslim groups felt their privileged status was being
+      diminished; some Christian groups saw reforms as insufficient and continued to seek foreign protection or
+      national independence. Thus, the Edict both modernised the legal framework and highlighted the complexity
+      of managing a multi-religious empire in an age of nationalism.
+    </p>
+
+    <h3>7. Foreign Debt, the Ottoman Public Debt Administration and Economic Dependence</h3>
+    <p>
+      Wars, reforms and infrastructure projects required large sums of money. The Ottoman state, lacking a fully
+      modern tax system and industrial base, increasingly turned to foreign loans, especially from British and
+      French banks. These loans often carried high interest rates and were used not only for investment but also
+      to cover deficits.
+    </p>
+    <p>
+      By the 1870s, the empire’s debt had become unsustainable. In 1875, it declared partial bankruptcy, suspending
+      payments on some bonds. In response, European creditors demanded direct control over certain Ottoman
+      revenues. The result was the creation of the <strong>Ottoman Public Debt Administration</strong> in 1881, an institution
+      run largely by Europeans, which collected specific taxes (such as those on tobacco and salt) to pay foreign
+      bondholders. This was a clear sign of economic dependency and limited financial sovereignty.
+    </p>
+
+    <h3>8. First Constitutional Period and the Young Ottomans</h3>
+    <p>
+      A new generation of intellectuals and officials, often called the <strong>Young Ottomans</strong>, became influential in
+      the 1860s and 1870s. They criticised both traditional authoritarian rule and purely imitative Westernisation.
+      Instead, they argued for a constitutional system that would combine Islamic principles with modern
+      representative government. They saw a parliament and a written constitution as tools to control corruption,
+      mobilise public opinion and strengthen the empire.
+    </p>
+    <p>
+      In 1876, amid internal unrest and external crises, these ideas gained enough support that Sultan
+      <strong>Abdülhamid II</strong>, who had just come to the throne, agreed to promulgate the <strong>Kanun-ı Esasi</strong>, the
+      Ottoman constitution. A bicameral parliament was opened, with deputies representing various provinces and
+      communities. This marked the beginning of the <strong>First Constitutional Period</strong>.
+    </p>
+
+    <h3>9. Suspension of Parliament and Abdulhamid II’s Rule</h3>
+    <p>
+      Shortly after the constitution was proclaimed, the empire became embroiled in a devastating war with Russia
+      (1877–1878). Military defeat and political turmoil put great pressure on the new constitutional system.
+      Using the war as justification, Abdülhamid II suspended parliament in 1878 and began to rule in a more
+      centralised and personal manner.
+    </p>
+    <p>
+      His reign (often called the <strong>Hamidian era</strong>) is complex. On the one hand, he used censorship, a
+      developed intelligence network and tight control over the press and education to limit opposition. On the
+      other hand, he supported the expansion of railways, telegraph lines, modern schools and administrative
+      reforms. He presented himself as the <strong>Caliph</strong> of all Muslims, using Pan-Islamic symbolism to counter
+      European imperialism and to strengthen loyalty among Muslim subjects in distant regions such as India and
+      North Africa.
+    </p>
+
+    <h3>10. Nationalism and Territorial Losses</h3>
+    <p>
+      Throughout the 19th century, different national movements within the empire grew stronger. Inspired by
+      European nationalist ideas and supported by foreign powers, Greeks, Serbs, Romanians, Bulgarians and others
+      demanded autonomy or independence. The <strong>Greek War of Independence</strong>, the establishment of Serbia and
+      Romania as principalities and later the Bulgarian uprisings and the creation of an autonomous Bulgarian
+      principality gradually removed large parts of the Balkans from Ottoman control.
+    </p>
+    <p>
+      Each loss affected the empire not only territorially but also psychologically and demographically. Waves of
+      Muslim refugees from lost lands migrated to Anatolia and remaining Ottoman territories, changing the ethnic
+      composition and reinforcing an emerging sense of a more Muslim-Turkish core within the empire. This would
+      have important consequences for the late Ottoman and early Republican periods.
+    </p>
+
+    <h3>11. 19th Century as a Laboratory of Reform</h3>
+    <p>
+      Overall, the 19th century can be seen as a long and often painful laboratory of reform, where the empire
+      experimented with centralisation, legal restructuring, new educational systems, financial modernisation and
+      limited constitutionalism. Some initiatives failed quickly; others left lasting institutions and ideas.
+      Debates about the role of religion in politics, the definition of citizenship, the balance between central
+      authority and local autonomy, and the meaning of modernity continued into the 20th century and shaped the
+      intellectual environment from which the Young Turks and later the founding elite of the Republic emerged.
+    </p>
+
+    <!-- =========  ÖSYM-STYLE QUESTIONS (30)  ========= -->
+    <h3>12. Self-Assessment – ÖSYM Style Questions (30)</h3>
+    <p>
+      The following multiple-choice questions are written in an ÖSYM-like style. Each question has five options
+      (A–E), and the correct answer with a brief explanation is given immediately after the options.
+    </p>
+
+    <!-- Q1 -->
+    <div class="question">
+      <p><strong>Q1.</strong> Which of the following best explains the main aim of Selim III’s <em>Nizam-ı Cedid</em> reforms?</p>
+      <ol type="A">
+        <li>To abolish the janissary corps without creating a new army</li>
+        <li>To restore the timar system to its classical 16th-century form</li>
+        <li>To establish a modern army and fiscal system in line with European models</li>
+        <li>To divide the empire into national states based on ethnic borders</li>
+        <li>To completely isolate the empire from European influence</li>
+      </ol>
+      <p><em>Answer:</em> C – Selim III’s main purpose was to create a new, disciplined, European-style army and to support it with modern fiscal arrangements; the other options contradict this goal.</p>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question">
+      <p><strong>Q2.</strong> The destruction of the janissary corps during the “Auspicious Incident” (Vaka-i Hayriye) took place under which sultan?</p>
+      <ol type="A">
+        <li>Selim III</li>
+        <li>Mahmud II</li>
+        <li>Abdülmecid</li>
+        <li>Abdülaziz</li>
+        <li>Abdülhamid II</li>
+      </ol>
+      <p><em>Answer:</em> B – The janissaries were abolished by Mahmud II in 1826; this event opened the way for deep centralising reforms.</p>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question">
+      <p><strong>Q3.</strong> Which of the following was <strong>not</strong> among the basic promises of the Tanzimat Edict of 1839?</p>
+      <ol type="A">
+        <li>Security of life, honour and property</li>
+        <li>Regular and fair taxation</li>
+        <li>Orderly military conscription</li>
+        <li>Immediate abolition of the sultanate</li>
+        <li>Reform of judicial procedures</li>
+      </ol>
+      <p><em>Answer:</em> D – The Tanzimat Edict did not abolish the sultanate; it simply limited arbitrary practices and promised legal guarantees.</p>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question">
+      <p><strong>Q4.</strong> One of the main intentions of the Islahat Edict (1856) was to:</p>
+      <ol type="A">
+        <li>Re-establish the janissary corps as a privileged military class</li>
+        <li>Grant explicit legal equality to non-Muslim subjects</li>
+        <li>Prohibit non-Muslims from entering state offices</li>
+        <li>Restore capitulations completely</li>
+        <li>Unite all Christian churches under a single patriarch</li>
+      </ol>
+      <p><em>Answer:</em> B – The Islahat Edict emphasised equal rights for non-Muslims, including access to offices; the other options distort its content.</p>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question">
+      <p><strong>Q5.</strong> Which statement about the Tanzimat Era is <strong>correct</strong>?</p>
+      <ol type="A">
+        <li>It was a purely military reform period without any legal changes.</li>
+        <li>It aimed to return to pre-1453 institutions.</li>
+        <li>It introduced new legal codes and administrative reforms inspired by Europe.</li>
+        <li>It abolished all religious institutions immediately.</li>
+        <li>It created national states for each ethnic group within the empire.</li>
+      </ol>
+      <p><em>Answer:</em> C – Tanzimat combined legal, administrative and educational reforms influenced by European models; it did not abolish religion or create ethnic nation-states.</p>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question">
+      <p><strong>Q6.</strong> Which of the following is most closely associated with the <strong>Young Ottomans</strong>?</p>
+      <ol type="A">
+        <li>Defending absolute monarchy and rejecting any constitution</li>
+        <li>Supporting a parliament and constitution compatible with Islamic principles</li>
+        <li>Demanding a theocratic caliphate without any modern institutions</li>
+        <li>Promoting separatist nationalism for each ethnic group</li>
+        <li>Advocating complete isolation from Europe</li>
+      </ol>
+      <p><em>Answer:</em> B – Young Ottomans supported a constitutional system that harmonised Islam with modern representative government.</p>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question">
+      <p><strong>Q7.</strong> The Kanun-ı Esasi of 1876 is significant because it:</p>
+      <ol type="A">
+        <li>Was the first written constitution of the Ottoman Empire</li>
+        <li>Abolished the caliphate and the sultanate at once</li>
+        <li>Divided the empire into independent national republics</li>
+        <li>Legalised the janissary corps again</li>
+        <li>Prohibited all political representation of non-Muslims</li>
+      </ol>
+      <p><em>Answer:</em> A – Kanun-ı Esasi introduced the first Ottoman constitution and parliament; it did not abolish monarchy.</p>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question">
+      <p><strong>Q8.</strong> Which development shows the empire’s increasing economic dependence on European creditors?</p>
+      <ol type="A">
+        <li>Creation of the Nizam-ı Cedid army</li>
+        <li>Establishment of the Ottoman Public Debt Administration</li>
+        <li>Proclamation of the Tanzimat Edict</li>
+        <li>Conquest of Egypt by the Ottomans</li>
+        <li>Abolition of the janissary corps</li>
+      </ol>
+      <p><em>Answer:</em> B – The Public Debt Administration managed Ottoman revenues to pay foreign bondholders, symbolising economic dependence.</p>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question">
+      <p><strong>Q9.</strong> Which of the following was <strong>not</strong> a direct consequence of 19th-century nationalist movements in the Balkans?</p>
+      <ol type="A">
+        <li>Greek independence</li>
+        <li>Autonomy of Serbia and Romania</li>
+        <li>Gradual loss of large Balkan territories</li>
+        <li>Strengthening of Ottoman control over Central Europe</li>
+        <li>Emergence of Bulgarian uprisings and a Bulgarian principality</li>
+      </ol>
+      <p><em>Answer:</em> D – Ottoman control over Central Europe weakened rather than strengthened; the other options are outcomes of nationalist movements.</p>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question">
+      <p><strong>Q10.</strong> Abdülhamid II suspended the parliament mainly:</p>
+      <ol type="A">
+        <li>Because the constitution forbade any war with Russia</li>
+        <li>To strengthen decentralisation and local autonomy</li>
+        <li>Due to the 1877–1878 war and political instability</li>
+        <li>To allow the janissaries to rule directly</li>
+        <li>Because European powers forced him to abolish the constitution</li>
+      </ol>
+      <p><em>Answer:</em> C – The Russo-Ottoman war and resulting crisis gave Abdülhamid II the pretext to suspend parliament and rule more autocratically.</p>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question">
+      <p><strong>Q11.</strong> Which feature of Mahmud II’s reign best illustrates his aim of <strong>centralisation</strong>?</p>
+      <ol type="A">
+        <li>Restoring the full autonomy of provincial notables</li>
+        <li>Allowing religious orders to control taxation</li>
+        <li>Establishing modern ministries and a new regular army</li>
+        <li>Transferring all state functions to European advisors</li>
+        <li>Abolishing all forms of bureaucracy</li>
+      </ol>
+      <p><em>Answer:</em> C – Mahmud II integrated power at the centre by modern ministries and a new army; the other options go against centralisation.</p>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question">
+      <p><strong>Q12.</strong> The main goal of the Islahat Edict (1856) in the eyes of European powers was to:</p>
+      <ol type="A">
+        <li>Strengthen Orthodox Russia in the Black Sea</li>
+        <li>Guarantee the rights of non-Muslim subjects inside the empire</li>
+        <li>End all Ottoman participation in European diplomacy</li>
+        <li>Force the Ottomans to abandon the Tanzimat Edict</li>
+        <li>Restore the janissaries as a European-style army</li>
+      </ol>
+      <p><em>Answer:</em> B – European states wanted legal security for Christians; the Islahat Edict addressed this by promising equality and reforms.</p>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question">
+      <p><strong>Q13.</strong> The creation of new secondary schools (<em>rüşdiye</em>) and professional schools during the Tanzimat primarily served to:</p>
+      <ol type="A">
+        <li>Replace all religious schools overnight</li>
+        <li>Train a modern bureaucracy familiar with European ideas</li>
+        <li>Eliminate Muslim participation in administration</li>
+        <li>Confine education only to non-Muslims</li>
+        <li>Promote complete isolation from science and technology</li>
+      </ol>
+      <p><em>Answer:</em> B – These schools aimed to produce educated officials who could run a modernising state.</p>
+    </div>
+
+    <!-- Q14 -->
+    <div class="question">
+      <p><strong>Q14.</strong> Which of the following correctly matches the person and policy?</p>
+      <ol type="A">
+        <li>Selim III – Abolition of janissaries</li>
+        <li>Mahmud II – Islahat Edict</li>
+        <li>Abdülmecid – Gülhane (Tanzimat) Edict</li>
+        <li>Abdülaziz – First Constitution</li>
+        <li>Abdülhamid II – Nizam-ı Cedid army</li>
+      </ol>
+      <p><em>Answer:</em> C – The Tanzimat Edict was proclaimed under Abdülmecid; the other pairings are historically incorrect.</p>
+    </div>
+
+    <!-- Q15 -->
+    <div class="question">
+      <p><strong>Q15.</strong> Which economic problem pushed the empire to declare partial bankruptcy in 1875?</p>
+      <ol type="A">
+        <li>Excessive budget surplus and lack of investment opportunities</li>
+        <li>Massive foreign debt with high interest and war expenses</li>
+        <li>Total absence of any foreign trade</li>
+        <li>Over-industrialisation and unemployment</li>
+        <li>Discovery of unlimited gold reserves in Anatolia</li>
+      </ol>
+      <p><em>Answer:</em> B – Heavy foreign debt and war costs made repayment impossible, leading to partial default.</p>
+    </div>
+
+    <!-- Q16 -->
+    <div class="question">
+      <p><strong>Q16.</strong> The main common goal of the Crimean War allies (Britain, France, Ottoman Empire) was to:</p>
+      <ol type="A">
+        <li>Allow Russia to dominate the Straits</li>
+        <li>Support Russian expansion into the Mediterranean</li>
+        <li>Stop Russian expansion and protect the balance of power</li>
+        <li>Destroy the Ottoman Empire completely</li>
+        <li>Create a united Slavic empire in the Balkans</li>
+      </ol>
+      <p><em>Answer:</em> C – The Crimean War was fought primarily to check Russian expansion and preserve the European balance.</p>
+    </div>
+
+    <!-- Q17 -->
+    <div class="question">
+      <p><strong>Q17.</strong> Which of the following best describes Abdülhamid II’s political style after 1878?</p>
+      <ol type="A">
+        <li>Open parliamentary democracy with no censorship</li>
+        <li>Strict authoritarianism without any modernisation projects</li>
+        <li>Mixture of autocratic rule, censorship and selective modernisation</li>
+        <li>Complete withdrawal from world politics and technology</li>
+        <li>Pure military government by the janissary corps</li>
+      </ol>
+      <p><em>Answer:</em> C – Abdülhamid II combined authoritarian control with reforms in education, infrastructure and administration.</p>
+    </div>
+
+    <!-- Q18 -->
+    <div class="question">
+      <p><strong>Q18.</strong> Which statement about nationalism in the 19th-century Balkans is <strong>correct</strong>?</p>
+      <ol type="A">
+        <li>It had no connection to European political ideas.</li>
+        <li>It emerged only among Muslims in the empire.</li>
+        <li>It was influenced by European nationalism and sought independence or autonomy.</li>
+        <li>It aimed to strengthen Ottoman supranational identity.</li>
+        <li>It remained purely cultural and never had political demands.</li>
+      </ol>
+      <p><em>Answer:</em> C – Balkan national movements drew on European nationalist ideologies and had clear political aims.</p>
+    </div>
+
+    <!-- Q19 -->
+    <div class="question">
+      <p><strong>Q19.</strong> Which institution symbolised direct European control over certain Ottoman revenues?</p>
+      <ol type="A">
+        <li>Divan-ı Hümayun</li>
+        <li>Meclis-i Mebusan</li>
+        <li>Ottoman Public Debt Administration</li>
+        <li>Şeyhülislam’s Office</li>
+        <li>Provincial councils</li>
+      </ol>
+      <p><em>Answer:</em> C – The Public Debt Administration was established to manage specific revenues on behalf of foreign creditors.</p>
+    </div>
+
+    <!-- Q20 -->
+    <div class="question">
+      <p><strong>Q20.</strong> All of the following are results of 19th-century reforms <strong>except</strong>:</p>
+      <ol type="A">
+        <li>Growth of a Western-educated bureaucracy</li>
+        <li>Introduction of new legal codes</li>
+        <li>Creation of modern schools</li>
+        <li>Immediate and full industrialisation of the empire to European levels</li>
+        <li>Increased role of written constitutions in political debates</li>
+      </ol>
+      <p><em>Answer:</em> D – Industrialisation remained limited; the other options are genuine outcomes of the reform era.</p>
+    </div>
+
+    <!-- Q21 -->
+    <div class="question">
+      <p><strong>Q21.</strong> Which of the following correctly pairs a term with its description?</p>
+      <ol type="A">
+        <li>Tanzimat – Complete abolition of non-Muslim rights</li>
+        <li>Islahat – Guaranteeing legal equality for non-Muslims</li>
+        <li>Nizam-ı Cedid – First Ottoman constitution</li>
+        <li>Kanun-ı Esasi – Total return to absolute monarchy</li>
+        <li>Public Debt Administration – Organising the janissary corps</li>
+      </ol>
+      <p><em>Answer:</em> B – Islahat Edict underlined equality for non-Muslims; the other pairs are incorrect.</p>
+    </div>
+
+    <!-- Q22 -->
+    <div class="question">
+      <p><strong>Q22.</strong> The establishment of modern ministries (such as foreign affairs, interior, finance) mainly reflects:</p>
+      <ol type="A">
+        <li>A desire to eliminate all bureaucracy</li>
+        <li>Adoption of a more centralised and specialised administrative structure</li>
+        <li>Return to purely tribal governance</li>
+        <li>Transfer of all power to local notables</li>
+        <li>Rejection of any European administrative influence</li>
+      </ol>
+      <p><em>Answer:</em> B – Creating ministries shows a move toward central, specialised bureaucracy influenced by European models.</p>
+    </div>
+
+    <!-- Q23 -->
+    <div class="question">
+      <p><strong>Q23.</strong> Which of the following events is chronologically <strong>last</strong>?</p>
+      <ol type="A">
+        <li>Destruction of the janissaries</li>
+        <li>Proclamation of the Tanzimat Edict</li>
+        <li>Crimean War</li>
+        <li>Islahat Edict</li>
+        <li>First Constitutional Period</li>
+      </ol>
+      <p><em>Answer:</em> E – In order: janissaries abolished (1826), Tanzimat (1839), Crimean War (1853–1856), Islahat (1856), First Constitution (1876).</p>
+    </div>
+
+    <!-- Q24 -->
+    <div class="question">
+      <p><strong>Q24.</strong> Which group criticised both old-style absolutism and superficial Western imitation, advocating a constitutional regime?</p>
+      <ol type="A">
+        <li>Janissaries</li>
+        <li>Celali rebels</li>
+        <li>Young Ottomans</li>
+        <li>Classical ulema of the 16th century</li>
+        <li>Provincial ayans (notables) of the 18th century</li>
+      </ol>
+      <p><em>Answer:</em> C – Young Ottomans defended a constitutional, representative system compatible with Islamic values.</p>
+    </div>
+
+    <!-- Q25 -->
+    <div class="question">
+      <p><strong>Q25.</strong> Which war directly preceded the Islahat Edict and increased European attention to Christian subjects in the empire?</p>
+      <ol type="A">
+        <li>Balkan Wars</li>
+        <li>Crimean War</li>
+        <li>World War I</li>
+        <li>Russo-Ottoman War of 1877–78</li>
+        <li>Greek War of Independence</li>
+      </ol>
+      <p><em>Answer:</em> B – The Islahat Edict was issued after the Crimean War, partly in response to European demands.</p>
+    </div>
+
+    <!-- Q26 -->
+    <div class="question">
+      <p><strong>Q26.</strong> Which of the following is <strong>not</strong> a typical characteristic of the 19th-century Ottoman reform process?</p>
+      <ol type="A">
+        <li>Borrowing European legal and administrative models</li>
+        <li>Attempting to centralise the state</li>
+        <li>Promoting a new sense of imperial citizenship</li>
+        <li>Completely rejecting any military modernisation</li>
+        <li>Creating new schools for civil servants</li>
+      </ol>
+      <p><em>Answer:</em> D – Military modernisation was a central part of reforms; it was not rejected.</p>
+    </div>
+
+    <!-- Q27 -->
+    <div class="question">
+      <p><strong>Q27.</strong> The migration of Muslim refugees (muhacirs) from lost territories mainly resulted in:</p>
+      <ol type="A">
+        <li>A complete end to Muslim population in Anatolia</li>
+        <li>Strengthening of the empire’s hold on Central Europe</li>
+        <li>Changes in the demographic structure and increased focus on Anatolia</li>
+        <li>Total disappearance of nationalism in the Balkans</li>
+        <li>Immediate industrialisation of the countryside</li>
+      </ol>
+      <p><em>Answer:</em> C – Refugees changed demographics, making Anatolia more central to the empire’s identity.</p>
+    </div>
+
+    <!-- Q28 -->
+    <div class="question">
+      <p><strong>Q28.</strong> Which of the following correctly links a ruler to his characteristic policy?</p>
+      <ol type="A">
+        <li>Abdülhamid II – Open parliamentary rule without censorship</li>
+        <li>Mahmud II – Abolition of the janissaries and centralisation</li>
+        <li>Selim III – Islahat Edict</li>
+        <li>Abdülmecid – Destruction of Nizam-ı Cedid</li>
+        <li>Abdülaziz – Proclamation of the National Pact (Misak-ı Milli)</li>
+      </ol>
+      <p><em>Answer:</em> B – Mahmud II abolished the janissaries and centralised the state; the other associations are incorrect.</p>
+    </div>
+
+    <!-- Q29 -->
+    <div class="question">
+      <p><strong>Q29.</strong> Which statement best summarises the overall nature of the 19th-century Ottoman reforms?</p>
+      <ol type="A">
+        <li>They were purely decorative and had no institutional impact at all.</li>
+        <li>They completely copied European systems with no adaptation.</li>
+        <li>They attempted to modernise the state by combining Ottoman-Islamic traditions with selected European models.</li>
+        <li>They aimed to dissolve the empire into small independent states.</li>
+        <li>They abolished all forms of religion from social life overnight.</li>
+      </ol>
+      <p><em>Answer:</em> C – Reforms selectively integrated European ideas while seeking continuity with Ottoman-Islamic traditions.</p>
+    </div>
+
+    <!-- Q30 -->
+    <div class="question">
+      <p><strong>Q30.</strong> Which of the following best explains why the 19th century is called a “laboratory of reform” for the Ottoman Empire?</p>
+      <ol type="A">
+        <li>Because all reforms were successful and never criticised</li>
+        <li>Because the empire experimented with many reform models, some failing and some leaving lasting institutions</li>
+        <li>Because reforms were limited strictly to military uniforms</li>
+        <li>Because the empire isolated itself completely from Europe</li>
+        <li>Because the Ottomans abolished all administrative structures and ruled only by local customs</li>
+      </ol>
+      <p><em>Answer:</em> B – The 19th century saw repeated trials of different reforms; not all succeeded, but many shaped later developments.</p>
+    </div>
+
+  </div>
+
+  <!-- TOPIC 6 -->
+  <div id="t6" class="topic">
+    <h2>6. 20th Century &amp; National Struggle</h2>
+    <p class="tagline">
+      From the Balkan Wars and the First World War to the armistice, occupations, National Struggle and the foundation of the Republic.
+    </p>
+
+    <h3>1. Crisis in the Balkans</h3>
+    <p>
+      On the eve of the 20th century, the Ottoman Empire still held significant territories in the Balkans but
+      faced intense nationalist movements. The Young Turk Revolution of 1908 restored the constitution and
+      re-opened parliament, raising hopes for renewal. However, neighbouring states saw the empire’s internal
+      weakness as an opportunity. In the First Balkan War (1912), a coalition of Bulgaria, Serbia, Greece and
+      Montenegro attacked the empire, seizing almost all remaining European lands.
+    </p>
+    <p>
+      The Second Balkan War (1913) erupted when Bulgaria fought its former allies over the division of spoils.
+      The Ottomans managed to recapture Edirne and some territories, but the demographic and psychological
+      impact of the wars was profound. Hundreds of thousands of Muslim refugees fled to Anatolia, bringing with
+      them memories of loss and a sense of vulnerability that shaped later politics.
+    </p>
+
+    <h3>2. First World War and Defeat</h3>
+    <p>
+      Entering the First World War on the side of the Central Powers, the empire fought on multiple fronts.
+      While the Gallipoli campaign is remembered as a defensive success that prevented Allied forces from
+      capturing Istanbul, other fronts were less favourable. The Caucasus front saw heavy losses in harsh winter
+      conditions; in the Arab provinces, local revolts combined with British support led to the collapse of
+      Ottoman control.
+    </p>
+    <p>
+      The <strong>Armistice of Mondros</strong> in 1918 ended the fighting but imposed severe conditions, including
+      demobilisation, control of strategic points and the right of Allied forces to intervene wherever they
+      claimed disorder. Soon, foreign troops occupied Istanbul, and parts of Anatolia were divided into zones of
+      influence or assigned to Greece, Italy and France according to secret wartime agreements.
+    </p>
+
+    <h3>3. Birth of the National Struggle</h3>
+    <p>
+      In this atmosphere of occupation and disillusionment, local resistance groups formed in different regions.
+      Mustafa Kemal, appointed as an inspector to restore order in Anatolia, landed in Samsun on 19 May 1919 and
+      gradually turned his mission into a national liberation initiative. The <strong>Havza</strong> and
+      <strong>Amasya Circulars</strong> asserted that national independence must be won by the will and action of the
+      people.
+    </p>
+    <p>
+      The Erzurum and Sivas congresses brought together representatives from eastern and central Anatolia. They
+      declared that the country’s territorial integrity and independence were not negotiable and that any mandate
+      or protectorate was unacceptable. These meetings united disparate local defence organisations under a
+      common political program and leadership.
+    </p>
+
+    <h3>4. Grand National Assembly and War of Independence</h3>
+    <p>
+      The <strong>Grand National Assembly</strong>, opening in Ankara on 23 April 1920, claimed to represent national
+      sovereignty directly and rejected the authority of the occupied Istanbul government. It established
+      ministries, raised armies and negotiated with both domestic and foreign actors. The struggle unfolded on
+      three fronts: in the east against Armenian forces, in the south against French-led troops and their local
+      allies, and in the west against Greek armies backed by some Allied powers.
+    </p>
+    <p>
+      After initial difficulties, the national forces achieved significant victories: the First and Second İnönü
+      battles demonstrated that the new army could hold its ground; the Sakarya Battle turned the tide by
+      stopping the Greek advance towards Ankara; and the Great Offensive and Dumlupınar victory in 1922 broke
+      the main Greek forces in western Anatolia. These successes forced the withdrawal of occupation forces and
+      compelled the Allies to negotiate.
+    </p>
+
+    <h3>5. Lausanne and the End of the Empire</h3>
+    <p>
+      The <strong>Mudanya Armistice</strong> ended active hostilities in the western front and cleared the way for a
+      peace conference in Lausanne. There, Turkish representatives negotiated with major powers over borders,
+      capitulations, war debts and minority rights. The <strong>Lausanne Treaty</strong> of 1923 recognised the
+      sovereignty of the new Turkish state within its current borders and abolished capitulations, granting
+      economic and legal independence.
+    </p>
+    <p>
+      Shortly before Lausanne, the sultanate had been abolished; shortly after, the Republic was proclaimed.
+      Thus, the National Struggle did not simply defend old structures but created the conditions for a new
+      political order based on national sovereignty, territorial integrity and secular institutions.
+    </p>
+
+    <div class="refs">
+      <strong>Video references:</strong>
+      <a href="https://www.youtube.com/watch?v=RV7RTTbS_Xg" target="_blank">Turkish War of Independence 1919–1923 (DFT)</a><br/>
+      <a href="https://www.youtube.com/watch?v=9-gHFjpx1eM" target="_blank">Turkish Independence War – Explained in 20 minutes</a><br/>
+      <a href="https://www.youtube.com/watch?v=bgwZ3XE5sW4" target="_blank">Turkish War of Independence (English Subs)</a>
+
+      <strong>Reading references:</strong>
+      <a href="https://www.britannica.com/place/Turkey/Declaration-of-the-Turkish-republic" target="_blank">Declaration of the Turkish Republic – Britannica</a><br/>
+      <a href="https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/ataturk-and-turkish-independence/" target="_blank">Atatürk and Turkish Independence</a>
+    </div>
+  </div>
+
+  <!-- TOPIC 7 -->
+  <div id="t7" class="topic">
+    <h2>7. Atatürk’s Reforms &amp; Principles</h2>
+    <p class="tagline">
+      Comprehensive transformation of state and society after the War of Independence: political, legal, social, educational, economic and cultural reforms, and the six principles of Atatürk.
+    </p>
+
+    <h3>1. Political Foundations of the New Republic</h3>
+    <p>
+      After the success of the National Struggle, leaders in Ankara faced the question of how to institutionalise
+      the victory. The abolition of the sultanate in 1922 ended the Ottoman monarchy. On 29 October 1923, the
+      assembly proclaimed the <strong>Republic</strong>, electing Mustafa Kemal as its first president. The constitution
+      defined the state as a republic based on national sovereignty, with the Grand National Assembly as the
+      central organ of legislative power.
+    </p>
+    <p>
+      The abolition of the <strong>caliphate</strong> in 1924 further reduced the link between religious authority and
+      political power. While the population remained overwhelmingly Muslim, the state was no longer headed by a
+      caliph with a universal claim over the Muslim community. Instead, political legitimacy derived from the
+      will of the nation expressed through elected representatives.
+    </p>
+
+    <h3>2. Legal Reforms and Secularisation</h3>
+    <p>
+      One of the most far-reaching changes was the replacement of the old legal structure, which had combined
+      Islamic law with sultanic decrees and customary practices. The new <strong>Civil Code</strong>, adopted in 1926 and
+      inspired mainly by the Swiss model, regulated family law, inheritance, property and obligations on a
+      secular, gender-equal basis. Religious courts were abolished, and a unified, secular court system was
+      established.
+    </p>
+    <p>
+      Other legal reforms included a new <strong>Penal Code</strong>, <strong>Commercial Code</strong> and procedural laws inspired by
+      European examples. These changes not only updated regulations but also signalled a fundamental shift in
+      the sources of law: from religious doctrine and imperial will to national legislation based on reason,
+      comparative study and parliamentary debate.
+    </p>
+
+    <h3>3. Educational, Social and Cultural Reforms</h3>
+    <p>
+      The <strong>Law on the Unification of Education</strong> (Tevhid-i Tedrisat) placed all educational institutions
+      under the Ministry of National Education, abolishing dual structures between religious schools and
+      modern institutions. Primary education was expanded, new schools and teacher training institutes were
+      founded, and curricula were redesigned to emphasise science, citizenship and national history.
+    </p>
+    <p>
+      The adoption of the <strong>Latin alphabet</strong> in 1928 made reading and writing easier and facilitated mass
+      literacy campaigns. Language and history institutions were established to study and promote the Turkish
+      language and to reinterpret national history in a secular, research-based framework. Dress reforms
+      encouraged Western-style clothing and limited the use of traditional headgear and religious garments in
+      public offices.
+    </p>
+
+    <h3>4. Women’s Rights and Social Equality</h3>
+    <p>
+      In the social sphere, Atatürk’s reforms significantly improved the legal and public status of women. The
+      Civil Code abolished polygamy, gave women equal rights in divorce and inheritance and recognised civil
+      marriage as the only legally valid form. Access to education for girls increased, and women gradually
+      entered professions such as teaching, medicine and public service.
+    </p>
+    <p>
+      Politically, women gained the right to vote and be elected at the municipal level in 1930 and at the
+      national level in 1934. As a result, Turkish women participated in parliamentary elections earlier than in
+      many European countries, symbolising the modernising and egalitarian aspirations of the new regime.
+    </p>
+
+    <h3>5. Economic Policy and Statism</h3>
+    <p>
+      Economically, the republic adopted a pragmatic approach. In the 1920s, the government focused on repairing
+      war damage, abolishing capitulations and encouraging private entrepreneurship within a liberal framework.
+      In the 1930s, influenced by the global Great Depression and domestic needs, the state moved toward a more
+      active role in the economy known as <strong>statism</strong>.
+    </p>
+    <p>
+      State Economic Enterprises were established in sectors such as textiles, iron and steel, mining and
+      chemicals. Five-year development plans guided industrialisation efforts. While private enterprise
+      continued to exist, the state took responsibility for creating basic infrastructure and heavy industry,
+      aiming at self-sufficiency and balanced regional development.
+    </p>
+
+    <h3>6. The Six Principles of Atatürk</h3>
+    <p>
+      The main orientation of the republic was summarised in six principles, often represented by six arrows:
+    </p>
+    <ul>
+      <li><strong>Republicanism:</strong> rejection of monarchy and dynastic rule; sovereignty belongs to the nation.</li>
+      <li><strong>Nationalism:</strong> emphasis on a shared civic Turkish identity rather than religious or dynastic
+          loyalties; equality of citizens before the law.</li>
+      <li><strong>Populism:</strong> opposition to legal privileges of specific classes; ideal of a society without
+          corporate estates.</li>
+      <li><strong>Statism:</strong> an economic principle advocating state leadership in key sectors to achieve rapid
+          development and social justice.</li>
+      <li><strong>Secularism:</strong> separation of religious institutions and state institutions; freedom of
+          conscience; secular legal and educational systems.</li>
+      <li><strong>Reformism (Revolutionism):</strong> commitment to continuous renewal and modernisation rather than
+          preserving old forms for their own sake.</li>
+    </ul>
+
+    <div class="refs">
+      <strong>Video references:</strong>
+      <a href="https://www.youtube.com/watch?v=WM6ENAF_b24" target="_blank">Atatürk: Founder of Modern Turkey (documentary)</a><br/>
+      <a href="https://www.youtube.com/watch?v=XrN2aKf9RYE" target="_blank">For the People Despite the People: The Ataturk Revolution</a><br/>
+      <a href="https://www.youtube.com/watch?v=QbcZfkWdx0E" target="_blank">How Ataturk Made Turkey Secular</a>
+
+      <strong>Reading references:</strong>
+      <a href="https://www.britannica.com/biography/Kemal-Ataturk" target="_blank">Kemal Atatürk – Encyclopaedia Britannica</a><br/>
+      <a href="https://www.britannica.com/place/Turkey/Kemalist-policies" target="_blank">Kemalist policies – Britannica</a>
+    </div>
+  </div>
+
+  <!-- TOPIC 8 -->
+  <div id="t8" class="topic">
+    <h2>8. Contemporary Turkish &amp; World History</h2>
+    <p class="tagline">
+      Global transformations from the French and Industrial Revolutions to the world wars, the Cold War and the place of modern Turkey in this changing order.
+    </p>
+
+    <h3>1. The French and Industrial Revolutions</h3>
+    <p>
+      The <strong>French Revolution</strong> of 1789 challenged monarchy and aristocratic privilege, spreading ideas of
+      citizenship, popular sovereignty and national identity. These ideas inspired liberal and nationalist
+      movements across Europe and eventually in regions such as the Balkans and the Middle East. They affected
+      the Ottoman Empire indirectly, as various groups within its borders adopted national programs seeking
+      autonomy or independence.
+    </p>
+    <p>
+      The <strong>Industrial Revolution</strong>, beginning in Britain and spreading to Western Europe and North America,
+      transformed production through mechanisation, coal and steam power, and later electricity and petroleum.
+      It led to urbanisation, the rise of a factory-working class, new forms of capital accumulation and global
+      trade networks. Industrial powers gained a significant military and economic advantage, which they used to
+      expand colonial empires and impose unequal economic relations on non-industrialised regions.
+    </p>
+
+    <h3>2. The Two World Wars</h3>
+    <p>
+      The First World War (1914–1918) and the Second World War (1939–1945) were global conflicts involving
+      unprecedented mobilisation of people and resources. They caused massive casualties, the collapse of
+      empires, and fundamental shifts in the international order. The first war led to the dissolution of the
+      Austro-Hungarian, Russian, German and Ottoman empires. The second war ended with the defeat of Nazi
+      Germany and Imperial Japan and revealed the devastating power of nuclear weapons.
+    </p>
+    <p>
+      For Turkey, the legacy of the First World War was particularly significant: defeat and the subsequent
+      occupations gave rise to the National Struggle and the founding of a new republic. During the Second World
+      War, Turkey remained mostly neutral, mobilising its army but avoiding direct involvement until the final
+      phase of the conflict. This cautious policy aimed to protect territorial integrity and avoid the disasters
+      experienced in the previous war.
+    </p>
+
+    <h3>3. The Cold War and Beyond</h3>
+    <p>
+      After 1945, the world entered the <strong>Cold War</strong> era, characterised by ideological rivalry between the
+      United States and the Soviet Union. Global politics were shaped by alliances, proxy wars, nuclear
+      deterrence and competition in science and technology. International organisations such as the United
+      Nations and financial institutions such as the World Bank and IMF also played important roles in shaping
+      the postwar order.
+    </p>
+    <p>
+      Turkey, situated at the crossroads of Europe, Asia and the Middle East, acquired strategic importance.
+      It joined the <strong>North Atlantic Treaty Organization (NATO)</strong> in 1952, aligning itself with the Western
+      security system. At the same time, Turkey pursued domestic reforms, economic development and integration
+      with European institutions, while managing complex relations with neighbouring countries in the Balkans,
+      the Caucasus and the Middle East.
+    </p>
+
+    <h3>4. Globalisation and Contemporary Challenges</h3>
+    <p>
+      In the late 20th and early 21st centuries, globalisation intensified the flow of goods, capital, people and
+      information. Technological advances in transportation, communication and digital networks transformed
+      economic and cultural life. At the same time, new challenges emerged: environmental degradation, climate
+      change, inequality, financial crises, mass migration and debates over identity and multiculturalism.
+    </p>
+    <p>
+      Modern Turkey navigates these developments as a regional power with a dynamic economy and a young
+      population. It faces questions about democratisation, rule of law, secular–religious balance, minority
+      rights and foreign policy orientation. Its history – from pre-Islamic steppes to the Ottoman Empire and
+      the republican reforms – remains a key resource for understanding present debates and future choices.
+    </p>
+
+    <div class="refs">
+      <strong>Video references:</strong>
+      <a href="https://www.youtube.com/watch?v=EAyB19D-n_s" target="_blank">History of Turkey and the Turks</a><br/>
+      <a href="https://www.youtube.com/watch?v=ajRdOHmYw74" target="_blank">The Entire History of the Ottoman Empire</a>
+
+      <strong>Reading references:</strong>
+      <a href="https://www.britannica.com/place/Turkey" target="_blank">Turkey – country overview (Britannica)</a><br/>
+      <a href="https://www.britannica.com/topic/history-of-Turkey-102484" target="_blank">History of Turkey – detailed entry</a>
+    </div>
+  </div>
+
+</div> <!-- /container -->
+
+<script>
+function showTopic(id, btn) {
+  // reset highlights and restore original HTML for all topics
+  document.querySelectorAll(".topic").forEach(t => {
+    t.classList.remove("active");
+  });
+  document.querySelectorAll(".nav button").forEach(b => b.classList.remove("active"));
+  const el = document.getElementById(id);
+  if (el) {
+    // restore original HTML if saved
+    if (el.dataset.originalHtml) {
+      el.innerHTML = el.dataset.originalHtml;
+    } else {
+      el.dataset.originalHtml = el.innerHTML;
+    }
+    el.classList.add("active");
+    btn.classList.add("active");
+  }
+  document.getElementById("searchInfo").textContent = "";
+}
+
+function runSearch() {
+  const term = document.getElementById('searchInput').value.trim();
+  const info = document.getElementById('searchInfo');
+  const active = document.querySelector('.topic.active');
+  if (!active) return;
+
+  // store original HTML if not stored
+  if (!active.dataset.originalHtml) {
+    active.dataset.originalHtml = active.innerHTML;
+  } else {
+    // restore original HTML before new search
+    active.innerHTML = active.dataset.originalHtml;
+  }
+
+  if (!term) {
+    info.textContent = '';
+    return;
+  }
+
+  const safeTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp('(' + safeTerm + ')', 'gi');
+
+  let html = active.innerHTML;
+  let count = 0;
+  html = html.replace(regex, function(match) {
+    count++;
+    return '<span class="highlight">' + match + '</span>';
+  });
+
+  active.innerHTML = html;
+
+  if (count === 0) {
+    info.textContent = 'No results.';
+  } else {
+    info.textContent = count + ' result(s) highlighted in current topic.';
+    const first = active.querySelector('.highlight');
+    if (first) {
+      first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+}
+</script>
+
+</body>
+</html>
